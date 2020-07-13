@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.adi18.blood">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    firebaseDatabase.setPersistenceEnabled(true);
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Donor" />
+        <activity android:name=".First" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".OtpActivity" />
+        <activity android:name=".Recipient" />
+        <activity android:name=".ListDataActivity" />
+        <activity android:name=".BloodBank" />
+        <activity android:name=".Area" />
+        <activity android:name=".Search" />
+        <activity android:name=".FullData" />
+        <activity android:name=".MainActivity"></activity>
+    </application>
+
+</manifest>
